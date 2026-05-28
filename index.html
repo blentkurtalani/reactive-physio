@@ -97,7 +97,7 @@
       text-decoration: none;
     }
     .logo-wrap img {
-      height: 56px;
+      height: 80px;
       width: auto;
     }
     .nav-links {
@@ -370,17 +370,19 @@
     .about-img-wrapper {
       background: linear-gradient(135deg, var(--navy), var(--navy-dark));
       border-radius: 20px;
-      padding: 40px;
+      padding: 0;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 380px;
+      min-height: 420px;
+      overflow: hidden;
     }
-    .about-img-wrapper .logo-display {
-      max-width: 260px;
-      filter: brightness(0) invert(1);
-      opacity: 0.9;
+    .about-img-wrapper .erlind-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 420px;
     }
     .about-floating-card {
       position: absolute;
@@ -736,6 +738,7 @@
       .top-bar-left, .top-bar-right { width: 100%; justify-content: center; }
       .stats-row { justify-content: center; }
       .services-grid { grid-template-columns: 1fr; }
+      .logo-wrap img { height: 48px; }
     }
 
     @media (max-width: 600px) {
@@ -796,7 +799,7 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="container">
-      <div class="hero-badge">Ordinanca për Terapi Fizikale — Gjilan</div>
+      <div class="hero-badge">Ordinanca per Terapi Fizikale, Gjilan</div>
       <h1>Ne Kujdesemi për<br><span>Shëndetin Tuaj</span></h1>
       <p>ReActive Physio ofron terapi fizikale të specializuar me qasje individuale për çdo pacient, duke ju ndihmuar të rifitoni lëvizshmërinë dhe të jetoni pa dhimbje.</p>
       <a href="tel:+38345848444" class="hero-cta">
@@ -860,11 +863,11 @@
         </div>
         <div class="about-visual reveal">
           <div class="about-img-wrapper">
-            <img src="logo.png" alt="ReActive Physio" class="logo-display">
+            <img src="erlind.png" alt="Erlind Muja - Fizioterapeut" class="erlind-photo">
           </div>
           <div class="about-floating-card">
             <div class="afc-number">Erlind Muja</div>
-            <div class="afc-label">Fizioterapeut — Gjilan, Kosovë</div>
+            <div class="afc-label">Fizioterapeut, Gjilan, Kosove</div>
           </div>
         </div>
       </div>
@@ -1112,7 +1115,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 ReActive Physio — Erlind Muja. Të gjitha të drejtat e rezervuara.
+        &copy; 2026 ReActive Physio | Erlind Muja. Te gjitha te drejtat e rezervuara.
       </div>
     </div>
   </footer>
